@@ -60,3 +60,19 @@ header a {
   color: #fff;
   text-shadow: 0 5px 10px #0004;
 }
+
+.carousel .list .item .content .author {
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+
+.carousel .list .item .content .title,
+.carousel .list .item .content .topic {
+  font-weight: bold;
+  font-size: 5em;
+  list-style: 1.3em;
+}
+
+.carousel .list .item .content .topic {
+  color: #f1673a;
+}
