@@ -299,6 +299,7 @@ header a {
     opacity: 0;
   }
 }
+/*
 @media screen and (max-width: 678px) {
   .carousel .list .item .content {
     padding-right: 0;
@@ -309,5 +310,112 @@ header a {
   .carousel.prev .list .item .content .des,
   .carousel.prev .list .item .content .buttons {
     font-size: 30px;
+  }
+}
+*/
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px;
+  }
+
+  header a {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .carousel .list .item .content {
+    padding-right: 10%;
+    top: 10%;
+  }
+
+  .carousel .list .item .content .author,
+  .carousel .list .item .content .title,
+  .carousel .list .item .content .topic {
+    font-size: 3em;
+  }
+
+  .carousel .list .item .content .des {
+    font-size: 1.3em;
+  }
+
+  .carousel .list .item .buttons {
+    grid-template-columns: repeat(2, 100px);
+  }
+
+  .thumbnail {
+    bottom: 20px;
+    gap: 10px;
+  }
+
+  .thumbnail .item {
+    width: 100px;
+    height: 150px;
+  }
+
+  .arrows {
+    top: 85%;
+    right: 55%;
+  }
+
+  .arrows button {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* iPad Styles */
+@media screen and (max-width: 1024px) {
+  header {
+    width: 100%;
+  }
+
+  header a {
+    margin-right: 30px;
+    font-size: 1rem;
+  }
+
+  .carousel .list .item .content {
+    padding-right: 15%;
+    top: 15%;
+  }
+
+  .carousel .list .item .content .author,
+  .carousel .list .item .content .title,
+  .carousel .list .item .content .topic {
+    font-size: 2em;
+  }
+
+  .carousel .list .item .content .des {
+    font-size: 1em;
+  }
+
+  .carousel .list .item .buttons {
+    grid-template-columns: repeat(2, 120px);
+  }
+
+  .thumbnail {
+    bottom: 30px;
+    gap: 15px;
+  }
+
+  .thumbnail .item {
+    width: 130px;
+    height: 180px;
+  }
+
+  .arrows {
+    top: 82%;
+    right: 52%;
+  }
+
+  .arrows button {
+    width: 35px;
+    height: 35px;
   }
 }
