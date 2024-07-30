@@ -22,6 +22,11 @@ header {
 header a {
   color: #eee;
   margin-right: 40px;
+  font-size: 1.3em;
+}
+
+header a:hover {
+  color: #f1683a;
 }
 /* carousel */
 .carousel {
@@ -73,6 +78,12 @@ header a {
   grid-template-rows: 40px;
   gap: 5px;
   margin-top: 20px;
+}
+
+.carousel .list .item .des {
+  font-size: 1.2em;
+  font-family: poppins;
+  font-weight: medium;
 }
 .carousel .list .item .buttons button {
   border: none;
@@ -327,6 +338,7 @@ header a {
   header a {
     margin-right: 10px;
     margin-bottom: 10px;
+    font-size: 1em;
   }
 
   .carousel .list .item .content {
