@@ -23,15 +23,27 @@ header {
   align-items: center;
   position: relative;
   z-index: 100;
+  background: rgba(255, 255, 255, 0.1); /* Light background with transparency */
+  border-radius: 10px; /* Rounded corners */
+  backdrop-filter: blur(10px); /* Blur effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding-left: 10px;
 }
+
 header a {
   color: #eee;
   margin-right: 40px;
   font-size: 1.3em;
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
 header a:hover {
   color: #f1683a;
+}
+
+header:hover {
+  background: rgba(255, 255, 255, 0.2); /* Slightly more opaque on hover */
 }
 
 /* First Section starts */
