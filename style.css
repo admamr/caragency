@@ -6,7 +6,7 @@ html {
 
 body {
   margin: 0;
-  background: linear-gradient(to right, #050505, #226160, #d0a465);
+  background: linear-gradient(to bottom, #1a3636, #111112);
   color: #eee;
   font-family: Poppins;
   font-size: 12px;
@@ -501,7 +501,7 @@ header .logo img {
   grid-template-areas:
     "item1 item1 item3"
     "item2 item2 item3"
-    "item4 item5 item6";
+    "item5 item4 item4";
   gap: 15px;
   width: 100%;
   max-width: 1200px;
@@ -534,9 +534,20 @@ header .logo img {
   background-color: #28282b;
 }
 
+.item1 p {
+  font-size: 14px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.item1 p span {
+  color: #f1683a;
+  font-weight: bold;
+  font-style: italic;
+}
+
 .item2 {
   grid-area: item2;
-  background-color: #66ffcc;
+  background-color: whitesmoke;
 }
 .item3 {
   grid-area: item3;
@@ -567,16 +578,96 @@ header .logo img {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 768px) {
+/* Responsive design for tablets */
+@media (max-width: 992px) {
+  .bento-box {
+    grid-template-areas:
+      "item1 item1"
+      "item3 item3"
+      "item2 item2"
+      "item5 item4";
+  }
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 600px) {
   .bento-box {
     grid-template-areas:
       "item1"
-      "item2"
       "item3"
+      "item2"
       "item4"
-      "item5"
-      "item6";
+      "item5";
   }
+}
+
+.bento-item {
+  background-color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5rem;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-grid img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 25px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-grid img:hover {
+  transform: scale(1.2);
+}
+
+.item1 {
+  grid-area: item1;
+  background-color: #28282b;
+}
+
+.item1 p {
+  font-size: 14px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.item1 p span {
+  color: #f1683a;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.item2 {
+  grid-area: item2;
+  background-color: whitesmoke;
+}
+
+.item3 {
+  grid-area: item3;
+  background-color: #111112;
+}
+
+.item3 h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #f1683a;
+}
+
+.item4 {
+  grid-area: item4;
+  background-color: #ff6666;
+}
+
+.item5 {
+  grid-area: item5;
+  background-color: #6666ff;
+}
+
+.bento-item:hover {
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.5); /* Changed shadow to white */
 }
 
 /* Second Section Ends */
@@ -625,6 +716,8 @@ header .logo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.5);
 }
 .banner .content {
   position: absolute;
@@ -644,7 +737,7 @@ header .logo img {
   font-family: "ICA Rubrik";
   font-size: 16em;
   line-height: 1em;
-  color: #25283b;
+  color: ;
   position: relative;
 }
 .banner .content h1::after {
@@ -652,7 +745,7 @@ header .logo img {
   inset: 0 0 0 0;
   content: attr(data-content);
   z-index: 2;
-  -webkit-text-stroke: 2px #d2d2d2;
+  -webkit-text-stroke: 2px #050500;
   color: transparent;
 }
 .banner .content .author {
@@ -662,15 +755,24 @@ header .logo img {
 }
 .banner .content h2 {
   font-size: 3em;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  color: #f1683a;
+}
+
+.banner .content p {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 14px;
 }
 .banner .content .model {
-  background-image: url(./Images/15.png);
+  background-image: url(./Images/logo.png);
   width: 100%;
   height: 75vh;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-size: auto 130%;
+  background-size: auto 40%;
   background-repeat: no-repeat;
   background-position: top center;
   z-index: 1;
