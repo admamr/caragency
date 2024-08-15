@@ -489,6 +489,30 @@ header .logo img {
 /* First Section ends */
 
 /* Second Section starts */
+
+.second {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.about {
+  background: #fff;
+  width: 100%;
+  align-items: end;
+  background-image: url(./Images/16.jpg);
+  border-radius: 0 25% 25% 0;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  z-index: 1;
+}
+
+.about h2 {
+  font-size: 3em;
+  font-family: "Times New Roman", Times, serif;
+}
+
 .bento-container {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -507,7 +531,7 @@ header .logo img {
   grid-template-areas:
     "item1 item1 item3"
     "item2 item2 item3"
-    "item5 item4 item4";
+    "item4 item4 item4";
   gap: 15px;
   width: 100%;
   max-width: 1200px;
@@ -543,12 +567,29 @@ header .logo img {
 .item1 p {
   font-size: 14px;
   font-family: "Times New Roman", Times, serif;
+  padding-top: 50px;
 }
 
 .item1 p span {
   color: #f1683a;
   font-weight: bold;
   font-style: italic;
+}
+
+.more {
+  margin-top: 50px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 50px;
+  background-color: #000;
+  color: #f1683a;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
+}
+
+.more:hover {
+  background-color: #eee;
+  color: #000;
+  transition: all 0.5s ease-in-out;
 }
 
 .item2 {
