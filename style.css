@@ -714,6 +714,27 @@ header .logo img {
     font-size: 18px; /* Larger font size for desktops */
   }
 }
+
+/* Media query for Mobile*/
+@media (max-width: 767px) {
+  .second {
+    width: auto;
+  }
+  .about {
+    width: 50%;
+  }
+  .about h2 {
+    font-size: 12px;
+  }
+
+  .about p {
+    font-size: 8px;
+  }
+
+  .about-pic {
+    width: 50%;
+  }
+}
 /* Icon Ticker Starts*/
 
 .icon-ticker {
