@@ -687,6 +687,33 @@ header .logo img {
   height: 100%;
   opacity: 0.5;
 }
+
+/* Media queries for tablets and larger devices */
+@media (min-width: 768px) {
+  .second {
+    flex-direction: row; /* Arrange items horizontally on larger screens */
+  }
+
+  .about {
+    width: 50%; /* Half width for larger screens */
+    padding: 50px;
+  }
+
+  .about-pic {
+    width: 50%; /* Half width for larger screens */
+  }
+}
+
+/* Media queries for desktops and larger devices */
+@media (min-width: 1024px) {
+  .about h2 {
+    font-size: 28px; /* Larger font size for desktops */
+  }
+
+  .about p {
+    font-size: 18px; /* Larger font size for desktops */
+  }
+}
 /* Icon Ticker Starts*/
 
 .icon-ticker {
