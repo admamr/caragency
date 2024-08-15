@@ -689,7 +689,7 @@ header .logo img {
 }
 
 /* Media queries for tablets and larger devices */
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .second {
     flex-direction: row; /* Arrange items horizontally on larger screens */
   }
