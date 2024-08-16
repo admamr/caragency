@@ -65,7 +65,7 @@ window.addEventListener("load", function () {
   setTimeout(function () {
     document.getElementById("loader").style.display = "none"; // Hide loader
 
-    const content = document.getElementById("content");
+    const content = document.getElementById("");
     content.style.display = "block"; // Make content visible
     setTimeout(() => {
       content.style.opacity = 1; // Fade in content
