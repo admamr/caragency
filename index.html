@@ -6,7 +6,16 @@
     <title>Car Agency</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
+    <!-- Loading Spinner -->
+    <div id="loader" class="loader">
+      <video id="loadingVideo" class="loading-video" autoplay muted playsinline>
+        <source src="./Images/loader.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <!-- Loading Spinner Ends -->
     <header>
       <div class="nav">
         <a href="#">Home</a>
@@ -219,8 +228,10 @@
       </div>
     </div>
     <!-- Icon Ticker Ends-->
-    <!-- Second Section Ends-->
-    <!-- Third Section Starts-->
+    <!-- Third Section Starts -->
+    <div class="third"></div>
+    <!-- Third Section Ends -->
+    <!-- Fourth Section Starts-->
     <div class="banner">
       <div class="slider" style="--quantity: 10">
         <div class="item" style="--position: 1">
@@ -264,7 +275,7 @@
         <div class="model"></div>
       </div>
     </div>
-    <!-- Third Section Ends-->
+    <!-- Fourth Section Ends-->
 
     <script src="app.js"></script>
   </body>

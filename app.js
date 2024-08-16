@@ -56,3 +56,20 @@ buttons.forEach((button) => {
     alert("Button clicked!");
   });
 });
+
+window.addEventListener("load", function () {
+  // Show the loader for the duration of the video or 3 seconds (whichever is shorter)
+  const video = document.getElementById("loadingVideo");
+  const duration = Math.min(video.duration * 1000, 9000);
+
+  setTimeout(function () {
+    document.getElementById("loader").style.display = "none"; // Hide loader
+
+    const content = document.getElementById("content");
+    content.style.display = "block"; // Make content visible
+    setTimeout(() => {
+      content.style.opacity = 1; // Fade in content
+      content.style.transform = "scale(1)"; // Scale content to normal size
+    }, 50); // Slight delay to trigger transition
+  }, duration); // Duration based on video length or 3 seconds
+});
