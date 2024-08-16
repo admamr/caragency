@@ -66,14 +66,6 @@ buttons.forEach((button) => {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  var video = document.getElementById("loadingVideo");
-  video.onended = function () {
-    document.querySelector(".loader").style.display = "none";
-    document.querySelector(".main-content").style.display = "block";
-  };
-});
-
 //
 window.addEventListener("load", function () {
   // Show the loader for the duration of the video or 9 seconds (whichever is shorter)
