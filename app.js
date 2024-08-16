@@ -58,7 +58,7 @@ buttons.forEach((button) => {
 });
 
 window.addEventListener("load", function () {
-  // Show the loader for the duration of the video or 3 seconds (whichever is shorter)
+  // Show the loader for the duration of the video or 9 seconds (whichever is shorter)
   const video = document.getElementById("loadingVideo");
   const duration = Math.min(video.duration * 1000, 9000);
 
