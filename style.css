@@ -26,21 +26,23 @@ body {
   z-index: 9999;
 }
 
-.loading-video {
-  width: 20%; /* Adjust as needed */
+#loadingWebp {
+  width: 100%;
   height: auto; /* Maintain aspect ratio */
+  max-width: 100vw;
+  max-height: 100vh;
 }
 
 /* Additional responsive adjustments */
 @media (max-width: 768px) {
-  #loadingVideo {
+  #loadingWebp {
     width: 100%;
     height: auto;
   }
 }
 
 @media (max-width: 480px) {
-  #loadingVideo {
+  #loadingWebp {
     width: 100%;
     height: auto;
   }
