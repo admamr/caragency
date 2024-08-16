@@ -57,6 +57,15 @@ buttons.forEach((button) => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  var video = document.getElementById("loadingVideo");
+  video.onended = function () {
+    document.querySelector(".loader").style.display = "none";
+    document.querySelector(".main-content").style.display = "block";
+  };
+});
+
+//
 window.addEventListener("load", function () {
   // Show the loader for the duration of the video or 9 seconds (whichever is shorter)
   const video = document.getElementById("loadingVideo");
@@ -73,3 +82,4 @@ window.addEventListener("load", function () {
     }, 50); // Slight delay to trigger transition
   }, duration); // Duration based on video length or 3 seconds
 });
+//

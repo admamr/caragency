@@ -533,147 +533,6 @@ header .logo img {
 
 /* Second Section starts */
 
-/*Second Section Ends*/
-
-/*Third Section Starts*/
-
-.bento-container {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.1); /* Light background with transparency */
-  border-radius: 10px; /* Rounded corners */
-  backdrop-filter: blur(10px); /* Blur effect */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  padding-left: 10px;
-}
-
-.bento-box {
-  display: grid;
-  grid-template-areas:
-    "item1 item1 item3"
-    "item2 item2 item3"
-    "item4 item4 item4";
-  gap: 15px;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.bento-item {
-  background-color: #fff;
-  border-radius: 20px;
-  text-align: center;
-  padding: 20px;
-  font-size: 1.5rem;
-  color: #fff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.logo-grid img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  border-radius: 25px 25px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.logo-grid img:hover {
-  transform: scale(1.2);
-}
-
-.item1 {
-  grid-area: item1;
-  background-color: #28282b;
-}
-
-.item1 p {
-  font-size: 14px;
-  font-family: "Times New Roman", Times, serif;
-  padding-top: 50px;
-}
-
-.item1 p span {
-  color: #f1683a;
-  font-weight: bold;
-  font-style: italic;
-}
-
-.more {
-  margin-top: 50px;
-  padding: 10px 10px 10px 10px;
-  border-radius: 50px;
-  background-color: #000;
-  color: #f1683a;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 400;
-}
-
-.more:hover {
-  background-color: #eee;
-  color: #000;
-  transition: all 0.5s ease-in-out;
-}
-
-.item2 {
-  grid-area: item2;
-  background-color: whitesmoke;
-}
-.item3 {
-  grid-area: item3;
-  background-color: #111112;
-}
-
-.item3 h2 {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 24px;
-  font-weight: bold;
-  color: #f1683a;
-}
-
-.item4 {
-  grid-area: item4;
-  background-color: #ff6666;
-}
-.item5 {
-  grid-area: item5;
-  background-color: #6666ff;
-}
-.item6 {
-  grid-area: item6;
-  background-color: #ffcc66;
-}
-
-.bento-item:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Responsive design for tablets */
-@media (max-width: 992px) {
-  .bento-box {
-    grid-template-areas:
-      "item1 item1"
-      "item3 item3"
-      "item2 item2"
-      "item5 item4";
-  }
-}
-
-/* Responsive design for mobile devices */
-@media (max-width: 600px) {
-  .bento-box {
-    grid-template-areas:
-      "item1"
-      "item3"
-      "item2"
-      "item4"
-      "item5";
-  }
-}
-
-/* Second Section Ends */
-
 .second {
   display: flex;
   justify-content: center;
@@ -782,6 +641,9 @@ header .logo img {
     opacity: 0.6;
   }
 }
+
+/* Second Section Ends */
+
 /* Icon Ticker Starts*/
 
 .icon-ticker {
@@ -838,7 +700,32 @@ header .logo img {
 }
 
 /* Icom Ticker Ends */
+
 /* Third Section Starts */
+
+.bg-pic {
+  width: 100%;
+  display: block;
+  justify-content: center;
+}
+
+.bg-pic img {
+  width: 80%;
+  padding-left: 150px;
+}
+
+@media (max-width: 480px) {
+  .bg-pic {
+    width: 100%;
+  }
+  .bg-pic img {
+    width: 80%;
+    padding-left: 50px;
+  }
+}
+/*Third Section Ends */
+
+/* Fourth Section Starts */
 @import url("https://fonts.cdnfonts.com/css/ica-rubrik-black");
 @import url("https://fonts.cdnfonts.com/css/poppins");
 
@@ -987,4 +874,4 @@ header .logo img {
     font-size: 5em;
   }
 }
-/* Third Section Ends */
+/* Fourth Section Ends */
