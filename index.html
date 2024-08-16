@@ -13,7 +13,7 @@
 
   <body>
     <!-- Loading Spinner -->
-    <!--<div id="loader" class="loader">
+    <div id="loader" class="loader">
       <video autoplay muted loop id="loadingVideo">
         <source src="./Images/loader.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -23,9 +23,10 @@
 
     <header>
       <div class="nav">
-        <a href="#">Home</a>
-        <a href="about">About-us</a>
-        <a href="#">Contacts</a>
+        <a href="#home">Home</a>
+        <a href="#about">About-us</a>
+        <a href="#inventory">Inventory</a>
+        <a href="#">Contact</a>
       </div>
       <div class="logo">
         <img src="./Images/logo.png" alt="logo" />
@@ -33,7 +34,7 @@
     </header>
     <!-- First Section start -->
     <!-- carousel -->
-    <div class="carousel">
+    <div id="home" class="carousel">
       <!-- list item -->
       <div class="list">
         <div class="item">
@@ -154,7 +155,7 @@
     </div>
     <!-- First section end -->
     <!-- Second section Starts -->
-    <div class="second">
+    <div id="about" class="second">
       <div class="about">
         <h2>Drive Your Dream, Live the Luxury</h2>
         <p>
@@ -242,7 +243,7 @@
     <!-- Third Section Ends -->
 
     <!-- Fourth Section Starts-->
-    <div class="banner">
+    <div id="inventory" class="banner">
       <div class="slider" style="--quantity: 10">
         <div class="item" style="--position: 1">
           <img src="./Images/Second Section/5.jpg" alt="" />
