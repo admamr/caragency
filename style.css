@@ -6,7 +6,7 @@ html {
 
 body {
   margin: 0;
-  background: linear-gradient(to right, #181823, #181818);
+  background: linear-gradient(to left, #272829, #191919);
   color: #eee;
   font-family: Poppins;
   font-size: 12px;
@@ -33,7 +33,7 @@ body {
 }
 
 /* Additional responsive adjustments */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .loader {
     display: flex;
     width: 100%;
@@ -429,7 +429,7 @@ header .logo img {
     object-fit: cover;
   }
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   header {
     display: flex;
     flex-direction: column;
@@ -504,7 +504,7 @@ header .logo img {
 }
 
 /* iPad Styles */
-@media screen and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   header {
     width: 100%;
   }
@@ -615,7 +615,7 @@ header .logo img {
 }
 
 /* Media queries for tablets and larger devices */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .second {
     flex-direction: row; /* Arrange items horizontally on larger screens */
   }
@@ -760,7 +760,7 @@ header .logo img {
 }
 
 /*Tablet Responsive*/
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .bg-pic {
     width: 100%;
   }
@@ -859,7 +859,7 @@ header .logo img {
 }
 
 /* Responsive Design for Tablets (max-width: 768px) */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .newsletter-container {
     width: auto;
   }
@@ -1021,7 +1021,7 @@ header .logo img {
   background-position: top center;
   z-index: 1;
 }
-@media screen and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .banner .slider {
     width: 160px;
     height: 200px;
