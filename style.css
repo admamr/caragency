@@ -33,10 +33,17 @@ body {
 }
 
 /* Additional responsive adjustments */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+  .loader {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+  }
   #loadingVideo {
-    width: 50%;
-    height: auto;
+    align-items: center;
+    width: 100%;
+    height: 50%;
   }
 }
 
@@ -75,6 +82,7 @@ header a {
   color: #eee;
   margin-right: 30px;
   font-size: 1.3em;
+  font-family: "Times New Roman", Times, serif;
   text-decoration: none; /* Remove underline */
   transition: color 0.3s ease ease; /* Smooth color transition on hover */
 }
@@ -421,19 +429,38 @@ header .logo img {
     object-fit: cover;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: auto;
-    padding: 10px;
+  }
+  header .nav {
+    display: flex;
+    flex-direction: row;
+  }
+  header .nav a {
+    font-size: 12px;
+    padding: 15px 0 0 5px;
   }
 
-  header a {
-    margin-right: 10px;
-    margin-bottom: 10px;
-    font-size: 1em;
+  header .logo {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+
+  header .logo img {
+    width: 100%;
+    margin-top: -27px;
+  }
+
+  .carousel {
+    height: 100vh;
+    margin-top: -50px;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
   }
 
   .carousel .list .item .content {
@@ -444,11 +471,11 @@ header .logo img {
   .carousel .list .item .content .author,
   .carousel .list .item .content .title,
   .carousel .list .item .content .topic {
-    font-size: 3em;
+    font-size: 2em;
   }
 
   .carousel .list .item .content .des {
-    font-size: 1.3em;
+    font-size: 20px;
   }
 
   .carousel .list .item .buttons {
@@ -595,7 +622,17 @@ header .logo img {
 
   .about {
     width: 50%; /* Half width for larger screens */
-    padding: 50px;
+    padding: 20px;
+  }
+
+  .about h2 {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .about p {
+    font-size: 12px;
+    padding: 10px;
   }
 
   .about-pic {
@@ -710,7 +747,7 @@ header .logo img {
   width: 80%;
   padding-left: 150px;
 }
-
+/*Mobile Responsive */
 @media (max-width: 480px) {
   .bg-pic {
     width: 100%;
@@ -718,8 +755,19 @@ header .logo img {
   .bg-pic img {
     width: 100%;
     height: auto; /* Maintain aspect ratio */
-    opacity: 0.6;
     padding: 10px 0 5px 0;
+  }
+}
+
+/*Tablet Responsive*/
+@media (min-width: 768px) {
+  .bg-pic {
+    width: 100%;
+  }
+
+  .bg-pic img {
+    width: 100%;
+    padding: 0 10px 0 5px;
   }
 }
 /*Third Section Ends */
@@ -811,15 +859,14 @@ header .logo img {
 }
 
 /* Responsive Design for Tablets (max-width: 768px) */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .newsletter-container {
-    height: auto; /* Adjust height for tablets */
-    padding: 20px; /* Adjust padding */
+    width: auto;
   }
 
   .newsletter-form {
-    max-width: 90%; /* Make the form take up more width */
-    padding: 20px 0 20px 0; /* Keep padding consistent */
+    width: 100%;
+    margin-top: 400px;
   }
 
   .newsletter-form h2 {
@@ -831,7 +878,7 @@ header .logo img {
   }
 
   .submit {
-    width: 100%; /* Make submit button full width */
+    width: 30%; /* Make submit button full width */
   }
 }
 
