@@ -725,6 +725,152 @@ header .logo img {
 /*Third Section Ends */
 
 /* Fourth Section Starts */
+.newsletter-container {
+  margin-top: 50px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./Images/25.png);
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.newsletter-form {
+  background: rgba(255, 255, 255, 0.2); /* Light color with transparency */
+  backdrop-filter: blur(10px); /* Blur effect for the frosted glass effect */
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+  color: #000;
+}
+
+.close-button {
+  width: 30px;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: #000;
+  background-color: #f1683a;
+  border-radius: 5px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.newsletter-form h2 {
+  font-size: 24px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.newsletter-form p {
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+  word-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.newsletter-form input[type="email"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.submit {
+  width: 30%;
+  padding: 10px;
+  background-color: #f1683a;
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #000; /* Darker yellow on hover */
+  color: #eee;
+}
+
+/* Responsive Design for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .newsletter-container {
+    height: auto; /* Adjust height for tablets */
+    padding: 20px; /* Adjust padding */
+  }
+
+  .newsletter-form {
+    max-width: 90%; /* Make the form take up more width */
+    padding: 20px 0 20px 0; /* Keep padding consistent */
+  }
+
+  .newsletter-form h2 {
+    font-size: 20px; /* Slightly reduce heading size */
+  }
+
+  .newsletter-form p {
+    font-size: 14px; /* Reduce paragraph font size */
+  }
+
+  .submit {
+    width: 100%; /* Make submit button full width */
+  }
+}
+
+/* Responsive Design for Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .newsletter-container {
+    height: 100%; /* Set height to auto */
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .newsletter-form {
+    max-width: 70%; /* Full width for mobile */
+    padding: 3px 10px 10px 10px; /* Reduce padding slightly */
+  }
+  .close-button {
+    margin-top: 5px;
+  }
+  .newsletter-form h2 {
+    font-size: 18px; /* Smaller font size for headings */
+  }
+
+  .newsletter-form p {
+    font-size: 12px; /* Smaller font size for paragraph text */
+  }
+
+  .newsletter-form input[type="email"] {
+    font-size: 12px; /* Adjust input font size */
+  }
+
+  .submit {
+    width: 50%; /* Full width for submit button */
+    font-size: 14px; /* Slightly smaller font size */
+  }
+}
+/* fourth Section Ends */
+/* Fifth Section Starts */
 @import url("https://fonts.cdnfonts.com/css/ica-rubrik-black");
 @import url("https://fonts.cdnfonts.com/css/poppins");
 
@@ -873,7 +1019,7 @@ header .logo img {
     font-size: 5em;
   }
 }
-/* Fourth Section Ends */
+/* Fifth Section Ends */
 /* Footer Starts */
 
 .luxury-footer {

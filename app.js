@@ -81,6 +81,6 @@ window.addEventListener("load", function () {
       content.style.opacity = 1; // Fade in content
       content.style.transform = "scale(1)"; // Scale content to normal size
     }, 50); // Slight delay to trigger transition
-  }, duration); // Duration based on video length or 3 seconds
+  }, duration); // Duration based on video length or 9 seconds
 });
 //
