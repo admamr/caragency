@@ -22,7 +22,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #000;
+  background-color: #090910;
   z-index: 9999;
 }
 
@@ -188,7 +188,7 @@ header .logo img {
 }
 .thumbnail .item {
   width: 150px;
-  height: 220px;
+  height: 150px;
   flex-shrink: 0;
   position: relative;
 }
@@ -336,7 +336,7 @@ header .logo img {
 
 .carousel.next .time,
 .carousel.prev .time {
-  animation: runningTime 3s linear 1 forwards;
+  animation: runningTime 5s linear 1 forwards;
 }
 @keyframes runningTime {
   from {
@@ -409,7 +409,7 @@ header .logo img {
 */
 
 /* Mobile Styles */
-@media (max-width: 480px) {
+@media (min-width: 300px) and (max-width: 767px) {
   header {
     height: auto; /* Allow height to adjust based on content */
     padding: 10px; /* Adjust padding for smaller screens */
@@ -453,7 +453,7 @@ header .logo img {
     font-weight: bold;
   }
 
-  .carousel .list .item .carousel-buttons button {
+  .carousel .list .item .buttons button {
     grid-template-columns: repeat(2, 100px);
   }
 }
@@ -469,7 +469,7 @@ header .logo img {
   }
   header .nav a {
     font-size: 12px;
-    padding: 15px 0 0 5px;
+    padding: 12px;
   }
 
   header .logo {
@@ -480,7 +480,7 @@ header .logo img {
 
   header .logo img {
     width: 100%;
-    margin-top: -27px;
+    margin-top: -37px;
   }
 
   .carousel {
@@ -510,9 +510,8 @@ header .logo img {
     word-spacing: 2px;
   }
 
-  .carousel .list .item .carousel-buttons button {
+  .carousel .list .item .buttons button {
     grid-template-columns: repeat(2, 100px);
-    border-radius: 50%;
   }
 
   .thumbnail {
@@ -624,7 +623,7 @@ header .logo img {
 }
 
 /* Media queries for mobile devices with max-width of 480px */
-@media (max-width: 480px) {
+@media (min-width: 300px) and (max-width: 767px) {
   .second {
     flex-direction: column; /* Stack items vertically on small screens */
   }
@@ -731,7 +730,7 @@ header .logo img {
   padding-left: 150px;
 }
 /*Mobile Responsive */
-@media (max-width: 480px) {
+@media (min-width: 300px) and (max-width: 767px) {
   .bg-pic {
     width: 100%;
   }
