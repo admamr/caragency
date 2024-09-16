@@ -66,7 +66,7 @@ buttons.forEach((button) => {
   });
 });
 
-//
+//Turned off
 window.addEventListener("load", function () {
   // Show the loader for the duration of the video or 9 seconds (whichever is shorter)
   const video = document.getElementById("loadingVideo");
@@ -84,3 +84,29 @@ window.addEventListener("load", function () {
   }, duration); // Duration based on video length or 9 seconds
 });
 //
+
+//modal for slider hover
+document.querySelectorAll(".slider .item img").forEach(function (img) {
+  // Pause the animation on hover
+  img.addEventListener("mouseover", function () {
+    document.querySelector(".slider").style.animationPlayState = "paused";
+  });
+
+  // Resume the animation on mouse out
+  img.addEventListener("mouseout", function () {
+    document.querySelector(".slider").style.animationPlayState = "running";
+  });
+
+  // Click to open modal with the image
+  img.addEventListener("click", function () {
+    const modal = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+    modal.style.display = "block";
+    modalImage.src = this.src;
+  });
+});
+
+// Close the modal when the 'x' button is clicked
+document.querySelector(".close").addEventListener("click", function () {
+  document.getElementById("imageModal").style.display = "none";
+});
