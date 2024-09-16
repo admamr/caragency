@@ -162,6 +162,8 @@ header .logo img {
   font-size: 1.2em;
   font-family: poppins;
   font-weight: medium;
+  text-shadow: 0 5px 10px #0004;
+  line-height: 2em;
 }
 .carousel .list .item .buttons button {
   border: none;
@@ -445,12 +447,14 @@ header .logo img {
     font-size: 18px;
     font-family: "Times New Roman", Times, serif;
     font-weight: bolder;
+    text-shadow: 0 5px 10px #0004;
   }
 
   .carousel .list .item .content .des {
     font-size: 14px;
-    font-family: "Times New Roman", Times, serif;
-    font-weight: bold;
+    font-family: poppins;
+    font-weight: medium;
+    text-shadow: 0 5px 10px #0004;
   }
 
   .carousel .list .item .buttons button {
